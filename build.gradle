@@ -23,9 +23,6 @@ dependencies {
     doc 'org.firstinspires.ftc:FtcCommon:8.0.0'
     doc 'org.firstinspires.ftc:OnBotJava:8.0.0'
     doc 'org.firstinspires.ftc:Inspection:8.0.0'
-
-//    implementation 'com.github.User:Repo:Tag'
-
 }
 
 
@@ -34,8 +31,6 @@ allprojects {
         google()
         mavenCentral()
         jcenter() // Warning: this repository is going to shut down soon
-
-        maven { url 'https://jitpack.io' }
     }
 }
 
