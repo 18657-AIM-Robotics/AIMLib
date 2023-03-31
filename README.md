@@ -12,6 +12,6 @@ To install the library, in the `build.dependencies.gradle` file of your reposito
          implementation 'com.github.18657-AIM-Robotics:AIMLib:VERSION'
    }
    ```  
-Replacing `VERSION` with the most recent release
+Replacing `VERSION` with the most recent release tag found in the releases section
 </br>
 </br>
