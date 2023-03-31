@@ -1,6 +1,4 @@
-package lib;
-
-import com.qualcomm.hardware.kauailabs.NavxMicroNavigationSensor;
+package com.aimrobotics.aimlib;
 
 public class Library {
     public boolean someLibraryMethod() {

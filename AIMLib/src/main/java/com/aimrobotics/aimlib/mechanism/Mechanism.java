@@ -1,4 +1,4 @@
-package lib.mechanism;
+package com.aimrobotics.aimlib.mechanism;
 
 
 

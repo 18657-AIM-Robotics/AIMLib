@@ -1,2 +1,2 @@
 rootProject.name = "aimlib"
-include ':aimlib'
+include ':AIMLib'

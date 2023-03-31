@@ -1,4 +1,4 @@
-package aimlib;
+package com;
 
 public class Library {
     public boolean someLibraryMethod() {
