@@ -1,7 +1,5 @@
 package com.aimrobotics.aimlib.mechanism;
 
-
-
 import com.qualcomm.robotcore.hardware.Gamepad;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
