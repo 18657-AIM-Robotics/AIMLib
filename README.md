@@ -9,7 +9,7 @@ To install the library, in the `build.dependencies.gradle` file of your reposito
         maven { url "https://jitpack.io" }
    }
    dependencies {
-         implementation 'com.github.18657-AIM-Robotics:AIMLib:VERSION'
+         implementation 'com.github.AIMRobotics18657:AIMLib:VERSION'
    }
    ```  
 Replacing `VERSION` with the most recent release tag found in the releases section
