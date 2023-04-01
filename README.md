@@ -12,6 +12,7 @@ To install the library, in the `build.dependencies.gradle` file of your reposito
          implementation 'com.github.AIMRobotics18657:AIMLib:VERSION'
    }
    ```  
-Replacing `VERSION` with the most recent release tag found in the releases section
+Replacing `VERSION` with the tag below
+[![](https://jitpack.io/v/AIMRobotics18657/AIMLib.svg)](https://jitpack.io/#AIMRobotics18657/AIMLib)
 </br>
 </br>
