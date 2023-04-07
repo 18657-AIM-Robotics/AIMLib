@@ -10,6 +10,7 @@ import org.firstinspires.ftc.robotcore.external.Telemetry;
  * Houses methods and variables common to all mechanisms on robot.
  *
  * @author Nate Schmelkin
+ * Inspiration from Paul Serbanescu 310 Stuy Fission
  */
 
 public abstract class Mechanism {
