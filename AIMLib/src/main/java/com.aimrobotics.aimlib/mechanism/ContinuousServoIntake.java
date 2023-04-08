@@ -20,12 +20,12 @@ public class ContinuousServoIntake {
      * Constructor
      *
      * @param hwMap references the robot's hardware map
-     * @param leftServo left servo in intake mechanism
-     * @param rightServo right servo in intake machanism
+     * @param leftServoName hardware ID of left servo
+     * @param rightServoName hardware ID of right servo
      */
-    public void initialize(HardwareMap hwMap, CRServo leftServo, CRServo rightServo) {
-        this.leftServo = leftServo;
-        this.rightServo = rightServo;
+    public void initialize(HardwareMap hwMap, String leftServoName, String rightServoName) {
+        leftServo = hwMap.get(CRServo.class, leftServoName);
+        rightServo = hwMap.get(CRServo.class, rightServoName);
     }
 
 
