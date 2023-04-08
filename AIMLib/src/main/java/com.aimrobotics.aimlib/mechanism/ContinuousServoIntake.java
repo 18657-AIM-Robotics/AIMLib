@@ -23,7 +23,7 @@ public class ContinuousServoIntake {
      * @param leftServo left servo in intake mechanism
      * @param rightServo right servo in intake machanism
      */
-    public ContinuousServoIntake(HardwareMap hwMap, CRServo leftServo, CRServo rightServo) {
+    public void initialize(HardwareMap hwMap, CRServo leftServo, CRServo rightServo) {
         this.leftServo = leftServo;
         this.rightServo = rightServo;
     }
