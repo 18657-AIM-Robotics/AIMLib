@@ -5,7 +5,7 @@ import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
 /**
- * ServoHand class is modular framework for servo-based intakes
+ * ContinuousServoIntake class is modular framework for servo-based intakes
  * Houses methods for standard intake movements.
  *
  * @author Nate Schmelkin
@@ -17,7 +17,7 @@ public class ContinuousServoIntake {
     CRServo rightServo;
 
     /**
-     * Constructor
+     * Initialization
      *
      * @param hwMap references the robot's hardware map
      * @param leftServoName hardware ID of left servo
