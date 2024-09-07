@@ -1,7 +1,6 @@
 package com.aimrobotics.aimlib.util;
 
 import com.aimrobotics.aimlib.gamepad.AIMPad;
-import com.qualcomm.robotcore.hardware.Gamepad;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
 import org.firstinspires.ftc.robotcore.external.Telemetry;
