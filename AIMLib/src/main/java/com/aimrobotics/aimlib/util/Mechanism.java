@@ -1,5 +1,6 @@
 package com.aimrobotics.aimlib.util;
 
+import com.aimrobotics.aimlib.gamepad.AIMPad;
 import com.qualcomm.robotcore.hardware.Gamepad;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
@@ -24,24 +25,22 @@ public abstract class Mechanism {
     public abstract void init(HardwareMap hwMap);
 
     /**
-     * Method to handle gampad input and relate to corresopnding hardware output
-     *
+     * Method to handle AIMPad input and relate to corresopnding hardware output
      * Only use with single gampad
      *
-     * @param gamepad references gamepad in slot one
+     * @param gamepad references AIMPad in slot one
      */
 
-    public void loop(Gamepad gamepad) { }
+    public void loop(AIMPad gamepad) {}
 
     /** Method to handle gampad input and relate to corresopnding hardware output
-     *
      * Use with multiple gampads
      *
-     * @param gamepad1 references gamepad in slot one
-     * @param gamepad2 references gamepad in slot two
+     * @param gamepad1 references AIMPad in slot one
+     * @param gamepad2 references AIMPad in slot two
      */
 
-    public void loop(Gamepad gamepad1, Gamepad gamepad2) { }
+    public void loop(AIMPad gamepad1, AIMPad gamepad2) { }
 
     /**
      * Method to handle all telemetry for a given mechanism

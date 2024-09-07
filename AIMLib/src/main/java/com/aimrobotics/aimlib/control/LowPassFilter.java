@@ -9,9 +9,9 @@ package com.aimrobotics.aimlib.control;
 
 public class LowPassFilter {
 
-    private final double gain;
+    private final double gain; // gain of the filter
 
-    private double prevOutput = 0;
+    private double prevOutput = 0; // previous output of the filter
 
     /**
      * Constructor for LowPassFilter

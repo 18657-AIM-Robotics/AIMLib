@@ -10,12 +10,21 @@ package com.aimrobotics.aimlib.control;
  */
 public class FeedforwardController {
 
-    private double kV;
-    private double kA;
-    private double kStatic;
-    private double kCos;
-    private double kG;
+    private double kV; // velocity proportional constant
+    private double kA; // acceleration proportional constant
+    private double kStatic; // static friction constant
+    private double kCos; // cosine compensation constant
+    private double kG; // gravity compensation constant
 
+
+    /**
+     * Constructor for FeedforwardController
+     * @param kV velocity proportional constant
+     * @param kA acceleration proportional constant
+     * @param kStatic static friction constant
+     * @param kCos cosine compensation constant
+     * @param kG gravity compensation constant
+     */
     public FeedforwardController(double kV, double kA, double kStatic, double kCos, double kG) {
         this.kV = kV;
         this.kA = kA;
@@ -24,6 +33,13 @@ public class FeedforwardController {
         this.kG = kG;
     }
 
+    /**
+     * Calculate the feedforward output
+     * @param targetPos target position
+     * @param referenceVelocity reference velocity
+     * @param referenceAcceleration reference acceleration
+     * @return feedforward output
+     */
     public double calculate(double targetPos, double referenceVelocity, double referenceAcceleration) {
         return (kV * referenceVelocity) + (kA * referenceAcceleration) + (Math.cos(targetPos) * kCos) + kG;
     }

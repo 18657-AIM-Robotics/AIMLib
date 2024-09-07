@@ -11,17 +11,17 @@ import com.qualcomm.robotcore.util.ElapsedTime;
 
 public class PIDController {
 
-    private ElapsedTime timer = new ElapsedTime();
+    private ElapsedTime timer = new ElapsedTime(); // timer for calculating change in time
 
-    private boolean hasStarted = false;
-    private double integralSum = 0;
-    private double previousError = 0;
+    private boolean hasStarted = false; // has the timer started
+    private double integralSum = 0; // sum of the integral
+    private double previousError = 0; // previous error
 
-    private final double kP;
-    private final double kI;
-    private final double kD;
-    private LowPassFilter lowPassFilter;
-    private double integralSumMax;
+    private final double kP; // proportional constant
+    private final double kI; // integral constant
+    private final double kD; // derivative constant
+    private LowPassFilter lowPassFilter; // low pass filter for the derivative
+    private double integralSumMax; // maximum value of the integral sum
 
     /**
      * Constructor for PIDController
@@ -90,7 +90,7 @@ public class PIDController {
         if (hasErrorCrossedZero(error)) {
             integralSum = 0;
         }
-        integralSum = integralSum + (error * dt);
+        integralSum += error * dt;
         if (Math.abs(integralSum) > integralSumMax) {
             integralSum = Math.signum(integralSum) * integralSumMax;
         }
