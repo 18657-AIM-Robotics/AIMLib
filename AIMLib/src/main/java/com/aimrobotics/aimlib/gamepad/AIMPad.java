@@ -10,8 +10,8 @@ import com.qualcomm.robotcore.hardware.Gamepad;
 
 public class AIMPad {
 
-    private static Gamepad currentState = new Gamepad();
-    private static Gamepad previousState = new Gamepad();
+    private Gamepad currentState;
+    private Gamepad previousState;
 
     /**
      * Constructor for AIMPad
@@ -20,7 +20,6 @@ public class AIMPad {
     public AIMPad(Gamepad gamepad) {
         currentState = new Gamepad();
         previousState = new Gamepad();
-        update(gamepad);
     }
 
     /**
