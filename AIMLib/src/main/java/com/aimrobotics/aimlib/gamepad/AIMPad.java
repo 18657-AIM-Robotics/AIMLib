@@ -2,6 +2,7 @@ package com.aimrobotics.aimlib.gamepad;
 
 import com.qualcomm.robotcore.hardware.Gamepad;
 
+
 /**
  * AIMPad class is a class that allows for more advanced gamepad controls
  *
