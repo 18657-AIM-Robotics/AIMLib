@@ -5,6 +5,10 @@ import com.qualcomm.robotcore.hardware.HardwareMap;
 
 import org.firstinspires.ftc.robotcore.external.Telemetry;
 
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Mechanism class is framework used for all mechanisms on robot.
  * Houses methods and variables common to all mechanisms on robot.
