@@ -6,7 +6,6 @@ import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.hardware.Servo;
 
 import org.firstinspires.ftc.robotcore.external.Telemetry;
-import org.firstinspires.ftc.teamcode.settings.GamepadSettings;
 
 public class StateDrivenServo extends Mechanism {
 
@@ -91,7 +90,7 @@ public class StateDrivenServo extends Mechanism {
         } else if (aimpad.isBPressed()) {
             presetStateChceker = (states.length + presetStateChceker - 1) % states.length;
             activeTargetState = states[(presetStateChceker)];
-        } else if (Math.abs(aimpad.getLeftStickY()) > GamepadSettings.GP1_STICK_DEADZONE) {
+        } else if (Math.abs(aimpad.getLeftStickY()) > 0.05) {
             setActiveStateCustom(aimpad.getLeftStickY());
         }
         loop(aimpad);
