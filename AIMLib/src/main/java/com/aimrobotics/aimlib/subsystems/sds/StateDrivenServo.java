@@ -78,6 +78,10 @@ public class StateDrivenServo extends Mechanism {
         activeTargetState = newActiveState;
     }
 
+    public ServoState getActiveTargetState() {
+        return activeTargetState;
+    }
+
     public void setActiveStateCustom(double position) {
         customState.setPosition(position);
         activeTargetState = customState;
