@@ -41,6 +41,6 @@ public class FeedforwardController {
      * @return feedforward output
      */
     public double calculate(double targetPos, double referenceVelocity, double referenceAcceleration) {
-        return (kV * referenceVelocity) + (kA * referenceAcceleration) + (Math.cos(targetPos) * kCos) + kG;
+        return (kV * referenceVelocity) + (kA * referenceAcceleration) + (Math.toDegrees(Math.cos(targetPos)) * kCos) + kG;
     }
 }
