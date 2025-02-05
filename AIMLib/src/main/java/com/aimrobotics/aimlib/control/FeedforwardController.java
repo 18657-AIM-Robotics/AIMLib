@@ -22,7 +22,7 @@ public class FeedforwardController {
      * @param kV velocity proportional constant
      * @param kA acceleration proportional constant
      * @param kStatic static friction constant
-     * @param kCos cosine compensation constant
+     * @param kCos cosine compensation constant in degrees
      * @param kG gravity compensation constant
      */
     public FeedforwardController(double kV, double kA, double kStatic, double kCos, double kG) {
@@ -41,6 +41,6 @@ public class FeedforwardController {
      * @return feedforward output
      */
     public double calculate(double targetPos, double referenceVelocity, double referenceAcceleration) {
-        return (kV * referenceVelocity) + (kA * referenceAcceleration) + (Math.toDegrees(Math.cos(targetPos)) * kCos) + kG;
+        return (kV * referenceVelocity) + (kA * referenceAcceleration) + (Math.cos(Math.toRadians(targetPos)) * kCos) + kG;
     }
 }
